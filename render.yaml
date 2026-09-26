@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: football-intelligence-backend
+    env: docker
+    plan: free
+    envVars:
+      - key: API_FOOTBALL_KEY
+        sync: false
+      - key: API_FOOTBALL_HOST
+        value: v3.football.api-sports.io
+      - key: ODDS_API_KEY
+        sync: false
